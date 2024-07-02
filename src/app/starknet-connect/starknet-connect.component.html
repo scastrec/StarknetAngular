@@ -1,0 +1,11 @@
+<p>starknet-connect works!</p>
+<button *ngIf="!isConnected()" (click)="connectStarknet()">Connect Starknet</button>
+<div *ngIf="isConnected()" class="container">
+  <div class="actions">
+    <button (click)="decrement()">-1</button>
+    <button (click)="increment()">+1</button>
+  </div>
+
+  <span>Counter : {{counter()}}</span>
+  <button (click)="disconnectStarknet()">Disconnect Starknet</button>
+</div>
